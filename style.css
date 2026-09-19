@@ -1007,3 +1007,169 @@ footer p {
     font-size: 15px;
     font-weight: bold;
 }
+/* =========================================
+   PÁGINA DE PROJETOS
+========================================= */
+
+.projetos-page {
+    width: 1000px;
+    max-width: 85%;
+
+    min-height: 100vh;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projetos-page h1 {
+    font-size: 60px;
+    line-height: 1.1;
+
+    margin: 15px 0 25px;
+
+    color: #e8edf2;
+}
+
+.projetos-page h1 span {
+    display: block;
+
+    color: #477b85;
+}
+
+.projetos-page > p {
+    max-width: 650px;
+
+    color: #737e89;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+
+/* STATUS */
+
+.projeto-status {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 35px;
+
+    background: #080d12;
+
+    border: 1px solid #182129;
+
+    border-radius: 10px;
+
+    margin-bottom: 35px;
+
+    transition: 0.3s ease;
+}
+
+.projeto-status:hover {
+    border-color: #315c64;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+.status-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #0d171d;
+
+    border: 1px solid #315c64;
+
+    border-radius: 8px;
+
+    color: #5d9aa5;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.projeto-status h2 {
+    color: #dfe5ea;
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.projeto-status h2::before {
+    content: "";
+}
+
+.projeto-status p {
+    color: #68747e;
+
+    font-size: 14px;
+}
+
+
+/* BOTÃO */
+
+.projetos-page .btn-primary {
+    text-decoration: none;
+
+    padding: 13px 22px;
+
+    border-radius: 5px;
+
+    background: #315c64;
+
+    color: #ffffff;
+
+    border: 1px solid #315c64;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.projetos-page .btn-primary:hover {
+    background: #3b707a;
+
+    transform: translateY(-2px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .projetos-page {
+        max-width: 90%;
+    }
+
+    .projetos-page h1 {
+        font-size: 42px;
+    }
+
+    .projeto-status {
+        padding: 25px;
+    }
+
+}
